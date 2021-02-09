@@ -14,7 +14,7 @@ The comparison between object detection and object discovery in our project is s
   <img src="https://github.com/forever208/YOLOv4-object/blob/master/data/demo.png" width='100%' height='100%'/>
 </p>
 
-our results is shown in the table below:
+our results are shown in the table below:
 | Models                    | Class  amount | Class names          | True Positive | False Positive | False Negative | Recall | mAP@50 | BFlops | FPS (Tesla V100) |
 |---------------------------|---------------|----------------------|---------------|----------------|----------------|--------|--------|--------|------------------|
 | YOLOv4                    | 80            | human, car, chair... | 22612         | 9754           | 14169          | 61.48% | 67.54% | 60.1   | 101              |
@@ -35,7 +35,7 @@ our results is shown in the table below:
 ### 1. Install Darknet (Linux) 
 clone Darknet
 ```sh
-$ git clone https://github.com/AlexeyAB/darknet
+$ git clone https://github.com/forever208/YOLOv4-object.git
 $ cd darknet
 ```
 
