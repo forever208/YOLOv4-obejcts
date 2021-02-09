@@ -38,10 +38,9 @@ the code mofification can be found in `src/box.c/void diounms_sort()`, around li
 | YOLOv4-tiny-object        | 1             | object               | 13467         | 5830           | 23314          | 36.61% | 45.16% | 6.8    | 523              |
 | YOLOv4-tiny-object (slim) | 1             | object               | 14596         | 7609           | 22185          | 39.68  | 45.53  | 6.7    | 558              |
 
+
 - We are gonna introduce the way of running, training, testing your own model in Linux.
 - For macOS and windows users, refer to [Darknet](https://github.com/AlexeyAB/darknet) is suggested.
-- we also recommend you to run this repo in Google Colab for saving the time of environment setting. A step-by-step introdution is included in each Jupyter Notebook ([YOLOv4-object](https://colab.research.google.com/drive/11jaSKfF74bPPVO0-9o-ZgLE5yVWUeI3d?usp=sharing), [YOLOv4-object (finefune)](https://colab.research.google.com/drive/17QSl3Eh3d1-MQH4xTpzMhUCTSLhSj7mN?usp=sharing), [YOLOv4-object (slim)](https://colab.research.google.com/drive/1zUucq9y5NeTvI5E7hCF4p2tTAh-TvZwO?usp=sharing), [YOLOv4-human-object](https://colab.research.google.com/drive/1N_hlL21sLejqjiJ-b9KXavcZ_guknmt3?usp=sharing)). If you run into problems in Colab, feel free to check this [tutorial](https://www.youtube.com/watch?v=mmj3nxGT2YQ) out   
-
 
 ### 【2】Install Darknet (Linux)
 clone Darknet
@@ -94,3 +93,10 @@ $ ./darknet detector demo data/obj.data cfg/yolov4-obj.cfg yolov4-obj_6577.weigh
 ```sh
 $ ./darknet detector demo data/obj.data cfg/yolov4-obj.cfg yolov4-obj_6577.weights -dont_show /YOLOv4-object/data/kitchen.mp4 -benchmark
 ```
+
+### 【4】Train your own YOLOv4-object
+We recommend you to train your own model in Google Colab for saving the time of environment setting. A step-by-step introdution is included in each Jupyter Notebook 
+- [YOLOv4-object](https://colab.research.google.com/drive/11jaSKfF74bPPVO0-9o-ZgLE5yVWUeI3d?usp=sharing)
+- [YOLOv4-object (finefune)](https://colab.research.google.com/drive/17QSl3Eh3d1-MQH4xTpzMhUCTSLhSj7mN?usp=sharing)
+- [YOLOv4-object (slim)](https://colab.research.google.com/drive/1zUucq9y5NeTvI5E7hCF4p2tTAh-TvZwO?usp=sharing)-
+- [YOLOv4-human-object](https://colab.research.google.com/drive/1N_hlL21sLejqjiJ-b9KXavcZ_guknmt3?usp=sharing)). If you run into problems in Colab, feel free to check this [tutorial](https://www.youtube.com/watch?v=mmj3nxGT2YQ) out   
