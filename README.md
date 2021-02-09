@@ -86,7 +86,7 @@ $ ./darknet detector test data/obj.data cfg/yolov4-obj.cfg yolov4-obj_6577.weigh
 ```sh
 $ ./darknet detector demo <your obj.data> <your config> <your weights file> -dont_show <your video> -i 0 -thresh 0.3 -out_filename <output path>
 # for example
-$ ./darknet detector demo data/obj.data cfg/yolov4-obj.cfg yolov4-obj_6577.weights -dont_show ./data/kitchen.mp4 -i 0 -thresh 0.3 ./data/prediction.avi 
+$ ./darknet detector demo data/obj.data cfg/yolov4-obj.cfg yolov4-obj_6577.weights -dont_show ./data/kitchen.mp4 -i 0 -thresh 0.3 -out_filename ./data/prediction.avi 
 ```
 
 **test FPS**
