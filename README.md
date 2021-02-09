@@ -17,7 +17,7 @@ The comparison between object detection and object discovery in our project is s
 </p>
 
 <p align="left">
-  <img src="https://github.com/forever208/YOLOv4-object/blob/master/data/object_vs_object_finetune.gif" width='100%' height='100%'/>
+  <img src="https://github.com/forever208/YOLOv4-object/blob/master/data/object_vs_object_finetune.gif" width='70%' height='70%'/>
 </p>
 
 
