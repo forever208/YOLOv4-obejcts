@@ -46,7 +46,7 @@ the code mofification can be found in `src/box.c/void diounms_sort()`, around li
 clone Darknet
 ```sh
 $ git clone https://github.com/forever208/YOLOv4-object.git
-$ cd darknet
+$ cd YOLOv4-object
 ```
 
 change the Makefile for using GPU
