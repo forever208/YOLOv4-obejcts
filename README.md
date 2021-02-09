@@ -6,8 +6,6 @@
 
 This repo is based on [Darknet](https://github.com/AlexeyAB/darknet).
 
-[Abstract]
-
 Object discovery refers to recognising all unknown objects in images, which is important for robotic systems to explore the unknown environment. In recent years, object detection models based on deep learning method have shown remarkable achievements in object classification and localisation. However, these models have difficulties to handle the unseen environment because it is infeasible to exhaustively predefine all types of objects. In this paper, we propose the model YOLOv4-object to recognise all objects in images by modifying the output space of YOLOv4 and related image labels. Experiments on COCO dataset demonstrate the effectiveness of our method by achieving 65.13\% recall (3.65\% higher than original YOLOv4). We point out that the feature of COCO, not labelling all objects, hurts the learning process of object discovery, we therefore finetune YOLOv4-object on 480 fully labelled images and witness a significant improvement of recall, further verifying the validity of our proposed method. Moreover, our approach is transferable, extensible, and compressible, showing broad application scenarios. Finally, we conduct extensive experiments to illustrate the factors that affect the object discovery performance of our method. Correspondingly, some recommendations on practical implementations (obstacle avoidance, human-robot interaction) are elaborated.
 
 
@@ -17,17 +15,17 @@ The comparison between object detection and object discovery in our project is s
 </p>
 
 our results is shown in the table below:
-| Models | Meta-model | Class amount | Class names | mAP@50 | BFlops | FPS (Tesla V100) | 
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| YOLOv4 | -      | 80 | person, car, chair... | 62.08% | 60.1 | 101 |
-| YOLOv4-object | YOLOv4 | 1 | object | 69.08% | 59.6 | 104 |
-| YOLOv4-human | YOLOv4 | 1 | human | 79.37% | 59.6 | 104 |
-| YOLOv4-human-object | YOLOv4 | 2 | human, object | 71.04% | 59.6 | 104 |
-| YOLOv4-object(slim) | YOLOv4 | 1 | object | 69.00% | 51.4 | 115 |
-| YOLOv4-object(finetune) | YOLOv4 | 1 | object | 65.77% | 59.6 | 104 |
-| YOLOv4-tiny | - | 80 | person, car, chair... | 40.20% | 6.9 | 505 |
-| YOLOv4-tiny-object | YOLOv4-tiny | 1 | object | 45.16% | 6.8 | 523 |
-| YOLOv4-tiny-object (slim) | YOLOv4-tiny | 1 | object | 45.53% | 6.7 | 558 |
+| Models                    | Class  amount | Class names          | True Positive | False Positive | False Negative | Recall | mAP@50 | BFlops | FPS (Tesla V100) |
+|---------------------------|---------------|----------------------|---------------|----------------|----------------|--------|--------|--------|------------------|
+| YOLOv4                    | 80            | human, car, chair... | 22612         | 9754           | 14169          | 61.48% | 67.54% | 60.1   | 101              |
+| YOLOv4-obejct             | 1             | object               | 23955         | 11282          | 12826          | 65.13% | 69.08% | 59.6   | 104              |
+| YOLOv4-human              | 1             | human                | 8306          | 2871           | 2698           | 75.48% | 79.37% | 59.6   | 104              |
+| YOLOv4-human-object       | 2             | human, object        | 23476         | 11132          | 13305          | 63.83% | 71.04% | 59.6   | 104              |
+| YOLOv4-object (slim)      | 1             | object               | 23790         | 10813          | 12991          | 64.68% | 69.00% | 51.4   | 115              |
+| YOLOv4-object (finetune)  | 1             | object               | 25001         | 19935          | 11780          | 67.97% | 65.77% | 59.6   | 104              |
+| YOLOv4-tiny               | 80            | human, car, chair... | 12822         | 6920           | 23959          | 34.86% | 38.97% | 6.9    | 505              |
+| YOLOv4-tiny-object        | 1             | object               | 13467         | 5830           | 23314          | 36.61% | 45.16% | 6.8    | 523              |
+| YOLOv4-tiny-object (slim) | 1             | object               | 14596         | 7609           | 22185          | 39.68  | 45.53  | 6.7    | 558              |
 
 - We are gonna introduce the way of running, training, testing your own model in Linux.
 - For macOS and windows users, refer to [Darknet](https://github.com/AlexeyAB/darknet) is suggested.
