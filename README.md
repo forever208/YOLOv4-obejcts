@@ -7,7 +7,7 @@ The model YOLOv4-object aims at discovering all object instances without explici
 
 The comparison between object detection and object discovery in our project is shown below:
 <p align="left">
-  <img src="https://github.com/forever208/YOLOv4-object/blob/main/data/demo.png" width='100%' height='100%'/>
+  <img src="https://github.com/forever208/YOLOv4-object/blob/master/data/demo.png" width='100%' height='100%'/>
 </p>
 
 our results is shown in the table below:
