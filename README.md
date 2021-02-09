@@ -7,7 +7,7 @@ This repo is based on [Darknet](https://github.com/AlexeyAB/darknet).
 ### Abstract
 Object discovery refers to recognising all unknown objects in images, which is important for robotic systems to explore the unknown environment. In recent years, object detection models based on deep learning method have shown remarkable achievements in object classification and localisation. However, these models have difficulties to handle the unseen environment because it is infeasible to exhaustively predefine all types of objects. In this paper, we propose the model YOLOv4-object to recognise all objects in images by modifying the output space of YOLOv4 and related image labels. Experiments on COCO dataset demonstrate the effectiveness of our method by achieving 65.13\% recall (3.65\% higher than original YOLOv4). We point out that the feature of COCO, not labelling all objects, hurts the learning process of object discovery, we therefore finetune YOLOv4-object on 480 fully labelled images and witness a significant improvement of recall, further verifying the validity of our proposed method. Moreover, our approach is transferable, extensible, and compressible, showing broad application scenarios. Finally, we conduct extensive experiments to illustrate the factors that affect the object discovery performance of our method. Correspondingly, some recommendations on practical implementations (obstacle avoidance, human-robot interaction) are elaborated.
 
-### 1. Indtroduction
+### 【1】Indtroduction
 The comparison between object detection and object discovery in our project is shown below:
   - object detection indicates the category 
   - object discovery focuses on detecting all unknown objects, in our model ,all objects are recognised as "object"
@@ -43,7 +43,7 @@ the code mofification can be found in `src/box.c/void diounms_sort()`, around li
 - we also recommend you to run this repo in Google Colab for saving the time of environment setting. A step-by-step introdution is included in each Jupyter Notebook ([YOLOv4-object](https://colab.research.google.com/drive/11jaSKfF74bPPVO0-9o-ZgLE5yVWUeI3d?usp=sharing), [YOLOv4-object (finefune)](https://colab.research.google.com/drive/17QSl3Eh3d1-MQH4xTpzMhUCTSLhSj7mN?usp=sharing), [YOLOv4-object (slim)](https://colab.research.google.com/drive/1zUucq9y5NeTvI5E7hCF4p2tTAh-TvZwO?usp=sharing), [YOLOv4-human-object](https://colab.research.google.com/drive/1N_hlL21sLejqjiJ-b9KXavcZ_guknmt3?usp=sharing)). If you run into problems in Colab, feel free to check this [tutorial](https://www.youtube.com/watch?v=mmj3nxGT2YQ) out   
 
 
-### 2. Install Darknet (Linux)
+### 【2】Install Darknet (Linux)
 clone Darknet
 ```sh
 $ git clone https://github.com/forever208/YOLOv4-object.git
@@ -69,7 +69,7 @@ $ wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_opt
 $ ./darknet detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights <img_path> -thresh 0.3
 ```
 
-### 2. Run YOLOv4-object
+### 【3】Run YOLOv4-object
 First download our weights file (yolov4-obj_6577.weights) 
 ```sh
 $ wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1-Z3nHBPEWpAEJ8-PkNKAyt1K9oB3FtNX' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1-Z3nHBPEWpAEJ8-PkNKAyt1K9oB3FtNX" -O train2017_txts_universal.zip && rm -rf /tmp/cookies.txt
