@@ -19,7 +19,7 @@ The comparison between object detection and object discovery in our project is s
 <p align="left">
   <img src="https://github.com/forever208/YOLOv4-object/blob/master/data/gif.gif" width='20%' height='20%'/>
 </p>
-![image](https://github.com/forever208/YOLOv4-object/blob/master/data/gif.gif)
+
 
 our results are shown in the table below:
 
