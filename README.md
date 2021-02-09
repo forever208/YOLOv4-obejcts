@@ -17,8 +17,9 @@ The comparison between object detection and object discovery in our project is s
 </p>
 
 our results are shown in the table below:
+
 note that, for equal comparison, we modified the NMS process of YOLO from doing NMS for each class to doing NMS for all classes simultaneously.
-the code mofification can be found in `src/box.c` void diounms_sort(), around line 916.
+the code mofification can be found in `src/box.c/void diounms_sort()`, around line 916.
 
 | Models                    | Class  amount | Class names          | True Positive | False Positive | False Negative | Recall | mAP@50 | BFlops | FPS (Tesla V100) |
 |---------------------------|---------------|----------------------|---------------|----------------|----------------|--------|--------|--------|------------------|
