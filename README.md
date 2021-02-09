@@ -17,6 +17,9 @@ The comparison between object detection and object discovery in our project is s
 </p>
 
 our results are shown in the table below:
+note that, for equal comparison, we modified the NMS process of YOLO from doing NMS for each class to doing NMS for all classes simultaneously.
+the code mofification can be found in `src/box.c` void diounms_sort(), around line 916.
+
 | Models                    | Class  amount | Class names          | True Positive | False Positive | False Negative | Recall | mAP@50 | BFlops | FPS (Tesla V100) |
 |---------------------------|---------------|----------------------|---------------|----------------|----------------|--------|--------|--------|------------------|
 | YOLOv4                    | 80            | human, car, chair... | 22612         | 9754           | 14169          | 61.48% | 67.54% | 60.1   | 101              |
