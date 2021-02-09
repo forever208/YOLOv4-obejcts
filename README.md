@@ -98,7 +98,7 @@ $ ./darknet detector demo data/obj.data cfg/yolov4-obj.cfg yolov4-obj_6577.weigh
 We recommend you to train your own model in Google Colab for saving the time of environment setting. A step-by-step introdution is included in each Jupyter Notebook.
 - [YOLOv4-object](https://colab.research.google.com/drive/11jaSKfF74bPPVO0-9o-ZgLE5yVWUeI3d?usp=sharing)
 - [YOLOv4-object (slim)](https://colab.research.google.com/drive/1zUucq9y5NeTvI5E7hCF4p2tTAh-TvZwO?usp=sharing)
-- [YOLOv4-human-object](https://colab.research.google.com/drive/1N_hlL21sLejqjiJ-b9KXavcZ_guknmt3?usp=sharing)). 
+- [YOLOv4-human-object](https://colab.research.google.com/drive/1N_hlL21sLejqjiJ-b9KXavcZ_guknmt3?usp=sharing)
 
 We also highly recommend you to finetune our YOLOv4-object model using images that in your application scenario, the detailed training process can be found in 
 - [YOLOv4-object (finefune)](https://colab.research.google.com/drive/17QSl3Eh3d1-MQH4xTpzMhUCTSLhSj7mN?usp=sharing)
