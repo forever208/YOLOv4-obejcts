@@ -16,6 +16,8 @@ The comparison between object detection and object discovery in our project is s
   <img src="https://github.com/forever208/YOLOv4-object/blob/master/data/demo.png" width='100%' height='100%'/>
 </p>
 
+<video src="https://www.youtube.com/watch?v=KdCimwhckf4" controls="controls" width="500" height="300">您的浏览器不支持播放该视频！</video>
+
 our results are shown in the table below:
 
 note that, for equal comparison, we modified the NMS process of YOLO from doing NMS for each class to doing NMS for all classes simultaneously.
