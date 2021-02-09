@@ -5,6 +5,9 @@
 
 
 This repo is based on [Darknet](https://github.com/AlexeyAB/darknet).
+
+[Abstract]
+
 Object discovery refers to recognising all unknown objects in images, which is important for robotic systems to explore the unknown environment. In recent years, object detection models based on deep learning method have shown remarkable achievements in object classification and localisation. However, these models have difficulties to handle the unseen environment because it is infeasible to exhaustively predefine all types of objects. In this paper, we propose the model YOLOv4-object to recognise all objects in images by modifying the output space of YOLOv4 and related image labels. Experiments on COCO dataset demonstrate the effectiveness of our method by achieving 65.13\% recall (3.65\% higher than original YOLOv4). We point out that the feature of COCO, not labelling all objects, hurts the learning process of object discovery, we therefore finetune YOLOv4-object on 480 fully labelled images and witness a significant improvement of recall, further verifying the validity of our proposed method. Moreover, our approach is transferable, extensible, and compressible, showing broad application scenarios. Finally, we conduct extensive experiments to illustrate the factors that affect the object discovery performance of our method. Correspondingly, some recommendations on practical implementations (obstacle avoidance, human-robot interaction) are elaborated.
 
 
