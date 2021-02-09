@@ -39,9 +39,6 @@ the code mofification can be found in `src/box.c/void diounms_sort()`, around li
 | YOLOv4-tiny-object (slim) | 1             | object               | 14596         | 7609           | 22185          | 39.68  | 45.53  | 6.7    | 558              |
 
 
-- We are gonna introduce the way of running, training, testing your own model in Linux.
-- For macOS and windows users, refer to [Darknet](https://github.com/AlexeyAB/darknet) is suggested.
-
 ### 【2】Install Darknet (Linux)
 clone Darknet
 ```sh
