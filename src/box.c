@@ -867,7 +867,7 @@ void do_nms(box *boxes, float **probs, int total, int classes, float thresh)
 // https://arxiv.org/abs/1911.08287
 void diounms_sort(detection *dets, int total, int classes, float thresh, NMS_KIND nms_kind, float beta1)
 {
-    int i, j, k;
+    int i, j, k, n;
     k = total - 1;
     for (i = 0; i <= k; ++i) {
         if (dets[i].objectness == 0) {
@@ -914,8 +914,13 @@ void diounms_sort(detection *dets, int total, int classes, float thresh, NMS_KIN
                     dets[j].prob[k] = 0;
                 }
                 else if (box_diou(a, b) > thresh && nms_kind == GREEDY_NMS) {
-                    dets[j].prob[k] = 0;
+                    for (n = 0; n < classes; ++n) {
+                        dets[j].prob[n] = 0;
+                    }
                 }
+//                else if (box_diou(a, b) > thresh && nms_kind == GREEDY_NMS) {
+//                    dets[j].prob[k] = 0;
+//                }
                 else {
                     if (box_diounms(a, b, beta1) > thresh && nms_kind == DIOU_NMS) {
                         dets[j].prob[k] = 0;
