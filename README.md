@@ -59,19 +59,7 @@ $ ./darknet detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights <img_path>
 ```
 
 ### 2. Run YOLOv4-object
-clone this repo
-```sh
-$ cd ..
-$ git clone https://github.com/forever208/YOLOv4-object.git
-$ cd darknet
-```
-copy cfg files into darknet folder
-```sh
-$ cp /YOLOv4-object/cfg/yolov4-obj.cfg ./cfg
-$ cp /YOLOv4-object/cfg/obj.names ./data
-$ cp /YOLOv4-object/cfg/obj.data ./data
-```
-Download our weights file (yolov4-obj_6577.weights) 
+First download our weights file (yolov4-obj_6577.weights) 
 ```sh
 $ wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1-Z3nHBPEWpAEJ8-PkNKAyt1K9oB3FtNX' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1-Z3nHBPEWpAEJ8-PkNKAyt1K9oB3FtNX" -O train2017_txts_universal.zip && rm -rf /tmp/cookies.txt
 ```
