@@ -16,6 +16,11 @@ The comparison between object detection and object discovery in our project is s
   <img src="https://github.com/forever208/YOLOv4-object/blob/master/data/demo.png" width='100%' height='100%'/>
 </p>
 
+
+We finetuned YOLOv4-object by 480 fully labelled images and witnessed a significant improvement of recall by discovering more objects.
+
+The contrast of YOLOv4-object and finetune model can be seen from the below image:
+
 <p align="left">
   <img src="https://github.com/forever208/YOLOv4-object/blob/master/data/object_vs_object_finetune.gif" width='70%' height='70%'/>
 </p>
